@@ -32,17 +32,47 @@ class CreditCard extends StatelessWidget {
                 children: [
                   Row(
                     children: const [
-                      Text('1111', style: TextStyles.cardTextStyle),
+                      Text('5199', style: TextStyles.cardTextStyle),
                       SizedBox(width: 15),
-                      Text('2222', style: TextStyles.cardTextStyle),
+                      Text('6478', style: TextStyles.cardTextStyle),
                       SizedBox(width: 15),
-                      Text('3333', style: TextStyles.cardTextStyle),
+                      Text('9534', style: TextStyles.cardTextStyle),
                       SizedBox(width: 15),
-                      Text('4444', style: TextStyles.cardTextStyle),
+                      Text('0564', style: TextStyles.cardTextStyle),
                     ],
                   ),
                   const SizedBox(height: 7),
-                  const Text('John Doe', style: TextStyles.cardTextStyle),
+                  const Text('Marvel.Dart', style: TextStyles.cardTextStyle),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Stack(
+                        overflow: Overflow.clip,
+                        //clipBehavior: Clip.hardEdge,
+                        children: [
+                        Container(
+                          height: 24,
+                          width:24,
+                          decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Colors.blueAccent
+                          ),
+                        ),
+                        Positioned(
+                          left: 7,
+                          child: Container(
+                            height: 24,
+                            width:24,
+                            decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Colors.redAccent
+                            ),
+                          ),
+                        ),
+                      ],
+                      ),
+                    ],
+                  ),
                 ],
               )
             ],
