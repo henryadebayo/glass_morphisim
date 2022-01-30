@@ -2,6 +2,8 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
+import 'credit_card.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -18,13 +20,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class TextStyles {
-  static const cardTextStyle = TextStyle(
-    color: Colors.white,
-    fontWeight: FontWeight.w300,
-    fontSize: 20,
-  );
-}
 
 const double cardWidth = 340;
 const double cardHeight = 220;

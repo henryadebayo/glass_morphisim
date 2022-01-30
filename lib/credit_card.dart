@@ -1,4 +1,8 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
+
+import 'custom_textStyle.dart';
 
 
 class CreditCard extends StatelessWidget {
