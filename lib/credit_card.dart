@@ -22,6 +22,8 @@ class _CreditCardState extends State<CreditCard> {
         setState((){
           if (colourCode == Colors.black.withOpacity(0.5)){
             colourCode = Colors.white.withOpacity(0.5);
+          }else{
+            colourCode = Colors.black.withOpacity(0.5);
           }
         });
       },
@@ -30,7 +32,7 @@ class _CreditCardState extends State<CreditCard> {
           filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
           child: Container(
             decoration: BoxDecoration(
-              color: Colors.black.withOpacity(0.3),
+              color: colourCode,
               borderRadius: BorderRadius.circular(15),
               border: Border.all(color: colourCode, width: 1.5),
             ),
